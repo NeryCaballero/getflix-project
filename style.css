@@ -17,14 +17,17 @@ body {
     text-align: center;
 }
 
+
+/* ---------------Submenu 1------------ */
+
 .submenu {
     border: 1px solid transparent;
     width: 280px;
     background-color: black;
     position: absolute;
     left: 10%;
-    top: 40%;
-    font-family: latha;
+    top: 30%;
+    font-family: candara;
     box-shadow: 9px 10px 11px 8px;
     border-radius: 23px;
 }
@@ -45,4 +48,62 @@ body {
 
 img {
     border-radius: 23px;
+}
+
+
+/* ---------------Submenu 2------------ */
+
+.submenu2 {
+    border: 1px solid transparent;
+    width: 280px;
+    background-color: black;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    font-family: candara;
+    box-shadow: 9px 10px 11px 8px;
+    border-radius: 23px;
+}
+
+.submenu2:hover {
+    color: silver;
+    box-shadow: 1px 2px 2px 11px;
+}
+
+.submenu2 h1 {
+    font-size: 20px;
+    font-family: candara;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+/* ---------------Submenu 3------------ */
+
+.submenu3 {
+    border: 1px solid transparent;
+    width: 280px;
+    background-color: black;
+    position: absolute;
+    left: 70%;
+    top: 30%;
+    font-family: candara;
+    box-shadow: 9px 10px 11px 8px;
+    border-radius: 23px;
+}
+
+.submenu3:hover {
+    color: silver;
+    box-shadow: 1px 2px 2px 11px;
+}
+
+.submenu3 h1 {
+    font-size: 20px;
+    font-family: candara;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
 }
