@@ -1,0 +1,48 @@
+body {
+    background: url(images/bg.jpg), no-repeat;
+    background-size: cover;
+}
+
+.letter {
+    border: 1px solid black;
+    width: 300px;
+    box-shadow: 5px 4px 8px 9px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+.letter h2 {
+    color: white;
+    font-family: candara;
+    text-align: center;
+}
+
+.submenu {
+    border: 1px solid transparent;
+    width: 280px;
+    background-color: black;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    font-family: latha;
+    box-shadow: 9px 10px 11px 8px;
+    border-radius: 23px;
+}
+
+.submenu h1 {
+    font-size: 20px;
+    font-family: candara;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.submenu:hover {
+    color: silver;
+    box-shadow: 1px 2px 2px 11px;
+}
+
+img {
+    border-radius: 23px;
+}
