@@ -13,7 +13,7 @@
         <input type="text" name="email" placeholder = "Email">
         <input type="text" name="username" placeholder = "User Name">
         <input type="password" name="password" placeholder = "password">
-        <input type="password" name="password" placeholder = "Repeat password">
+        <input type="password" name="passwordRepeat" placeholder = "Repeat password">
         <button type="submit" name="submit"> Sign Up </button>
 </form>
 </div>
