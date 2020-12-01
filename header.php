@@ -1,36 +1,40 @@
 <?php 
-
-// include_once 'header.php'; -----------> Paste this to every page 
+      session_start();
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweatish</title>
-    <link type="text/css" rel=stylesheet href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>...::: Sweatish :::...</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
+    <body>
+        <nav>
+            <div class="nav-bar row">
+                <a class="btn col col-xs-3" href="index.php">&#60Home/&#62</a>
 
-    <!-- Nav Bar when NOT LOGGED IN -->
-    <div class="fixed-top">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
-          </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+                <?php
+
+                  if (isset($_SESSION["useruid"])){
+
+                    echo '<a class="btn col col-xs-3" href="profile.php">&#60Profile/&#62</a>';
+                    echo '<a class="btn col col-xs-3" href="includes/logout.inc.php">&#60Logout/&#62</a>';
+                  }
+
+                  else{
+
+                    echo '<a class="btn col col-xs-3" href="signup.php">&#60Sign Up/&#62</a>';
+                    echo '<a class="btn col col-xs-3" href="login.php">&#60Log In/&#62</a>';
+                  }
+                ?>
+                
+                <a class="btn col col-xs-3" href="#contactme">&#60Contact/&#62</a>
+            </div>
         </nav>
-      </div>
-    <!-- End of Nav Bar when NOT LOGGED IN -->
+    </body>
     
-
-?>
