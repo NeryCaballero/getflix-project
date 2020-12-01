@@ -1,5 +1,9 @@
 <?php
 
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 // empty() PHP built-in function, Check whether a variable is empty. Also check whether the variable is set/declared:
 
 function emptyInputSignUp($name, $email, $username, $password, $passwordRepeat){                                    
@@ -51,7 +55,7 @@ function uidExists($conn, $username, $email){                                   
 
     $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;";         // SELECT , * = ALL , FROM 'users' table , WHERE usersUid is ? (placeholder) OR usersEmail is ? (placeholder) > "userUid" and "usersEmail" are EXIATING columns in our users table.
     $stmt = mysqli_stmt_init($conn);                                            // prepared statement prevents from  SQL injection, SQL injection is the placement of malicious code in SQL statements, via web page input. 
-    if(!my_sqli_stmt_prepare($stmt,$sql)) {                                     // mysqli_stmt_prepare() function prepares an SQL statement for execution => so this run the statement $stmt inside the database and see if it returns an error
+    if(!mysqli_stmt_prepare($stmt,$sql)) {                                     // mysqli_stmt_prepare() function prepares an SQL statement for execution => so this run the statement $stmt inside the database and see if it returns an error
         header("location: ../signup.php?error=stmtfailed");                     // IF theres an error, redirect user to sign up page with an "statement failed" error.
         exit();                                                                 // and Exit the script.
     }
@@ -76,7 +80,7 @@ function createUser($conn, $name, $email, $username, $password){                
 
     $sql = "INSERT INTO users(usersName, usersEmail, usersUid, usersPwd) VALUES(?, ?, ?, ?);";          // INSERT , INTO 'users' (COLUMN 1 2 3 4) (they must match exact name and order as in the table) VALUES (?, ?, ?, ?); (one '?' per value as placeholder).
     $stmt = mysqli_stmt_init($conn);                                                                    // prepared statement prevents from  SQL injection, SQL injection is the placement of malicious code in SQL statements, via web page input. 
-    if(!my_sqli_stmt_prepare($stmt,$sql)) {                                                             // mysqli_stmt_prepare() function prepares an SQL statement for execution => so this run the statement $stmt inside the database and see if it returns an error
+    if(!mysqli_stmt_prepare($stmt,$sql)) {                                                             // mysqli_stmt_prepare() function prepares an SQL statement for execution => so this run the statement $stmt inside the database and see if it returns an error
         header("location: ../signup.php?error=stmtfailed");                                             // IF theres an error, redirect user to sign up page with an "statement failed" error.
         exit();                                                                                         // and Exit the script.
     }
