@@ -1,5 +1,9 @@
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // isset() function checks whether a variable is set. 
 // header() build in function in PHP, used to redirect from one web page to another web page in PHP.
 // require_once is used to embed PHP code from another file.
