@@ -55,7 +55,7 @@ function uidExists($conn, $username, $email){                                   
 
     $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;";         // SELECT , * = ALL , FROM 'users' table , WHERE usersUid is ? (placeholder) OR usersEmail is ? (placeholder) > "userUid" and "usersEmail" are EXIATING columns in our users table.
     $stmt = mysqli_stmt_init($conn);                                            // prepared statement prevents from  SQL injection, SQL injection is the placement of malicious code in SQL statements, via web page input. 
-    if(!mysqli_stmt_prepare($stmt,$sql)) {                                     // mysqli_stmt_prepare() function prepares an SQL statement for execution => so this run the statement $stmt inside the database and see if it returns an error
+    if(!mysqli_stmt_prepare($stmt,$sql)) {                                      // mysqli_stmt_prepare() function prepares an SQL statement for execution => so this run the statement $stmt inside the database and see if it returns an error
         header("location: ../signup.php?error=stmtfailed");                     // IF theres an error, redirect user to sign up page with an "statement failed" error.
         exit();                                                                 // and Exit the script.
     }
@@ -93,4 +93,40 @@ function createUser($conn, $name, $email, $username, $password){                
     header("location: ../signup.php?error=none");                                                       // Redirect user to signup page , with no error message.
     exit();                                                                                             // and Exit the script.
 
+}
+
+function emptyInputLogin($username, $password){                                    
+    $result;
+    if (empty($username) || empty($password)){           // IF 1 or more of our inputs is/are empty
+        $result = true;                                  // emptyInputLogin() result is true.
+    }
+    else {
+        $result = false;                                 // otherwise, result is false.
+    }
+    return $result;
+}
+
+function loginUser($conn, $username, $pwd) {
+    $uidExists = uidExists($conn, $username, $username);
+
+    if ($uidExists === false){                                      // IF user does not exists
+        header("location: ../login.php?error=usernotfound");          // Redirect user to log in page with an error message
+        exit();                                                     // and exit the script.
+    }
+
+    $pwdHashed = $uidExists['usersPwd'];                            // Store the hashed pwd in variable $pwdHashed for verification.
+    $checkPwd = password_verify($pwd, $pwdHashed);                  // password_verify() verifies that the given password matches the hashed pwd on the database.
+
+    if ($checkPwd === false){                                       // IF passwords do not match
+        header("location: ../login.php?error=incorrectpassword");   // Redirect user to log in page with an error message 
+        exit();                                                     // and exit the script.
+    }
+    else if ($checkPwd === true){                                   // IF passwords match
+        session_start();                                            // start session
+        $_SESSION["userid"] = $uidExists["usersId"];                // store userid (database unique id)
+        $_SESSION["useruid"] = $uidExists["usersUid"];              // store useruid (username)
+        header("location: ../index.php");                           // Redirect user to home page
+        exit();                                                     // and exit the script.
+    }
+    
 }

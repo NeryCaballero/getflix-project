@@ -107,3 +107,36 @@ img {
     text-align: center;
     text-transform: capitalize;
 }
+
+
+/*temporary nav bar*/
+
+body {
+    background-color: rgb(39, 37, 37);
+    box-sizing: border-box;
+}
+
+
+/* N A V  B A R  */
+
+.nav-bar {
+    background-color: rgba(36, 36, 36, 0.95);
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.btn {
+    padding: 15px 10px;
+    color: rgba(227, 179, 57, 0.3);
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-align: center;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.btn:hover {
+    font-size: 1em;
+    background-color: rgba(227, 179, 57, 0.1);
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
