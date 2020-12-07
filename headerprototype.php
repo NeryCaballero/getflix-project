@@ -57,10 +57,3 @@
         </div>
       </nav>
     </header>
-
-    
-
-    <!-- <script src="script.js"></script>  moved to footer-->
-             
-
-    
