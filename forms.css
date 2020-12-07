@@ -1,0 +1,62 @@
+body{
+    background-image:  url("https://images.unsplash.com/photo-1508050249562-b28a87434496?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.signup{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+form{
+    margin-top: 60px;
+    padding: 50px;
+}
+
+.signupInput{
+    align-items:  center;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: 2px solid rgb(44, 43, 43) ;
+    margin : 30px;
+    background: transparent;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    width: 400px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(44, 43, 43);
+    opacity: 0.8; /* Firefox */
+}
+
+button{
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 25px;
+    margin: 30px;
+    align-items: center;
+    padding: 10px;
+    width: 400px;
+    border-radius: 30px;
+    background-color: rgb(34, 29, 29);
+    opacity: 0.5;
+}
+
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+
+        background-position: 90%;
+    }
+}
