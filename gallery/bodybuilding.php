@@ -1,3 +1,7 @@
+<?php 
+    include_once "headerprototype.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,9 +15,12 @@
 
 </head>
 
-<body>
+<body class="bg">
     <!--container-fluid is used to get the content goes from left side to right side -->
     <div class="container-fluid">
+        <div class="heading">
+            <p>Body Building</p>
+        </div>
         <!-- Search / Filter -->
         <div class="row searchFilter">
             <div class="col-sm-4">
@@ -79,81 +86,81 @@
     <div class="row">
         <div class="col-sm-3">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="724" height="407" src="https://www.youtube.com/embed/aZpOlw17Cco" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="724" height="407" src="https://www.youtube.com/embed/-d-fF1Nx2bQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p>Hatha-1</p>
+            <p class="para">Arm Workout-1</p>
         </div>
         <div class="col-sm-3">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="724" height="407" src="https://www.youtube.com/embed/AHknzb4UdXQ?list=RDCMUCcox27Gc-NGbb2-X9hdLaMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="724" height="407" src="https://www.youtube.com/embed/S5kOK3bxfro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p>Hatha-2</p>
+            <p class="para">Arm Workout-2</p>
         </div>
         <div class="col-sm-3">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="724" height="407" src="https://www.youtube.com/embed/bkbtXQrUl_w?list=RDCMUCcox27Gc-NGbb2-X9hdLaMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="724" height="407" src="https://www.youtube.com/embed/pl6KSCbL5ns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p>Hatha-3</p>
+            <p class="para">Arm Workout-3</p>
         </div>
         <div class="col-sm-3">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="724" height="407" src="https://www.youtube.com/embed/MQEaXsWPnWU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="724" height="407" src="https://www.youtube.com/embed/MQMD9jhYeHU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p>Hatha-4 </p>
-        </div>
-
-    </div>
-    <div class="row">
-        <div class="col-sm-3">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="724" height="407" src="https://www.youtube.com/embed/yRCUfumiqhk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p>Vinyasa-1</p>
-        </div>
-        <div class="col-sm-3">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="724" height="407" src="https://www.youtube.com/embed/msD__M1jT_Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p>Vinyasa-2</p>
-        </div>
-        <div class="col-sm-3">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="724" height="407" src="https://www.youtube.com/embed/_dLb6z1x20k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p>Vinyasa-3</p>
-        </div>
-        <div class="col-sm-3">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="724" height="407" src="https://www.youtube.com/embed/0yCahOPLg1s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p>Vinyasa-4</p>
+            <p class="para">Arm Workout-4</p>
         </div>
 
     </div>
     <div class="row">
         <div class="col-sm-3">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="724" height="407" src="https://www.youtube.com/embed/yNb2AxljvzM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="724" height="407" src="https://www.youtube.com/embed/ZtlH0A5dlLg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p>Ashtanga-1</p>
+            <p class="para">Chest Workout-1</p>
         </div>
         <div class="col-sm-3">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="724" height="407" src="https://www.youtube.com/embed/_e2Xcij207w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="724" height="407" src="https://www.youtube.com/embed/0L6ctFTm5Y0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p>Ashtanga-2</p>
+            <p class="para">Chest Workout-2</p>
         </div>
         <div class="col-sm-3">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="724" height="407" src="https://www.youtube.com/embed/hlRhyPzaM8w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="724" height="407" src="https://www.youtube.com/embed/ER2TioYlZpA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p>Ashtanga-3</p>
+            <p class="para">Chest Workout-3</p>
         </div>
         <div class="col-sm-3">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="724" height="407" src="https://www.youtube.com/embed/NmDPZRUfvac" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="724" height="407" src="https://www.youtube.com/embed/eVG-KfxPPbk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p>Ashtanga-3</p>
+            <p class="para">Chest Workout-4</p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="724" height="407" src="https://www.youtube.com/embed/LWdhO_OMrHk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="para">Leg Workout-1</p>
+        </div>
+        <div class="col-sm-3">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="724" height="407" src="https://www.youtube.com/embed/rbnKplIjbFI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="para">Leg Workout-2</p>
+        </div>
+        <div class="col-sm-3">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="724" height="407" src="https://www.youtube.com/embed/0KooCExq09Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="para">Leg Workout-3</p>
+        </div>
+        <div class="col-sm-3">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="724" height="407" src="https://www.youtube.com/embed/rOxlw2VMSDw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="para">Leg Workout-4</p>
         </div>
     </div>
     </div>
@@ -162,6 +169,11 @@
     <!--Latest compiled and minified Java script-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
+
+<?php 
+        include_once 'footer.php'; 
+?>
