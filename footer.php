@@ -18,14 +18,16 @@
 
                 <div id="footer-right">
                     <div class="footer-links">
-                        <a href="#">Home</a><br>
+
+                        <a href="#">Back to top</a><br>
                         <a href="contact.php">Contact</a><br>
-                        <a href="#">Web Design</a>
+                        <a href="https://github.com/NeryCaballero/getflix-project">Web Design</a>
+                      
                     </div>
                     <div class="footer-links">
-                        <a href="#">Sport 1</a><br>
-                        <a href="#">Sport 2</a><br>
-                        <a href="#">Sport 3</a><br>
+                        <a href="gallery/yoga.php">Yoga</a><br>
+                        <a href="gallery/fitness.php">Fitness</a><br>
+                        <a href="gallery/bodybuilding.php">Body Building</a><br>
                     </div>
                 </div>
             </div>
