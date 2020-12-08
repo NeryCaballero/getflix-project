@@ -8,7 +8,7 @@ footer {
 
 footer a,
 footer p {
-    color: rgba(194, 194, 194, 0.1);
+    color: rgb(255, 162, 22);
     font-size: 100%;
     font-weight: 100;
     text-align: center;
@@ -48,7 +48,7 @@ footer p {
 }
 
 #newsletter-btn {
-    color: rgba(194, 194, 194, 0.1);
+    color: rgba(216, 177, 5, 0.87);
     flex: 1;
     background-color: rgb(32, 32, 32);
     border: 1px solid  rgb(32, 32, 32);
@@ -76,7 +76,6 @@ footer p {
 }
 
 #footer-bottom {
-    /* border-top: 1px solid rgba(194, 194, 194, 0.1); */
     display: flex;
     justify-content: space-evenly;
     padding: 5px 0 25px 0;
