@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="headerstyle.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="forms.css">    
+    <!-- <link rel="stylesheet" href="gallery/gallery.css">   -->
     <link rel="stylesheet" href="footerstyle.css">
     <link rel="stylesheet" href="normalize.css">
     <!-- Fonts -->
@@ -41,14 +42,15 @@
 
         <div id="menu-options">
 
-          <div class="menu-item"><a href="index.php"><i class="fas fa-home"></i><br><br>HOME</a></div>
-
           <?php
             if (isset($_SESSION["useruid"])){
-              echo '<div class="menu-item"><a href="index.php"><i class="fas fa-dumbbell"></i><br><br>SPORTS</a></div>';        //ADD CORRECT LINK
+              $welcome = 'HI ' . strtoupper($_SESSION["useruid"]);
+              echo '<div class="menu-item"><a href="index.php"><i class="fas fa-home"></i><br><br>'.$welcome.'</a></div>';
+              echo '<div class="menu-item"><a href="#categories"><i class="fas fa-dumbbell"></i><br><br>SPORTS</a></div>';
               echo '<div class="menu-item"><a href="includes/logout.inc.php"><i class="fas fa-sign-out-alt"></i><br><br>LOG OUT</a></div>';
             }
             else {
+              echo '<div class="menu-item"><a href="index.php"><i class="fas fa-home"></i><br><br>HOME</a></div>';
               echo '<div class="menu-item"><a href="signup.php"><i class="fas fa-user-plus"></i><br><br>SIGN UP</a></div>';
               echo '<div class="menu-item"><a href="login.php"><i class="fas fa-sign-in-alt"></i><br><br>LOG IN</a></div>';
             }
