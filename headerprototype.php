@@ -8,12 +8,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>...::: Sweatish :::...</title>
-
+    <!-- Style Sheets -->
     <link rel="stylesheet" href="headerstyle.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footerstyle.css">
-    <link rel="stylesheet" href="forms.css">
-
+    <link rel="stylesheet" href="normalize.css">
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;703;800;900&display=swap" rel="stylesheet">
