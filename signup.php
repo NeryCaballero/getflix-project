@@ -1,57 +1,61 @@
 <?php 
-    include_once "header.php";
-
+    include_once "headerprototype.php";
 ?> 
 
-<div class="signup">
+<div class="formContainer1">
 
-    <form action="includes/signup.inc.php" method="POST">
+    <div class="signup">
+        <form action="includes/signup.inc.php" method="POST">
 
-        <input class="signupInput" type="text" name="name" placeholder = "Full Name:"></br>
-        <input class="signupInput"type="text" name="email" placeholder = "Email:"></br>
-        <input class="signupInput"type="text" name="username" placeholder = "Username:"></br>
-        <input class="signupInput"type="password" name="password" placeholder = "Password:"></br>
-        <input class="signupInput"type="password" name="passwordRepeat" placeholder = "Repeat Password:"></br>
-
-        <button type="submit" name="submit">Register</button>
-    </form>
-</div>
-
-<?php
+<!-- error handling-->
+    <?php
     if (isset($_GET["error"])) {                                     
         if ($_GET["error"] == "emptyinput") {
-        echo "<p>Fill in all fields!</p>";
+        echo "<p class='error'>Fill in all fields!</p>";
         }
 
         else if($_GET["error"] == "invalidUid") {
-            echo "<p>Choose a proper username!</p>";
+            echo "<p class='error'>Choose a proper username!</p>";
         }
 
         else if($_GET["error"] == "invalidEmail") {
-            echo "<p>Choose a proper email!</p>";
+            echo "<p class='error'>Choose a proper email!</p>";
         }
 
         else if($_GET["error"] == "passwordsdontmatch") {
-            echo "<p>Password doesn't match!</p>";
+            echo "<p class='error'>Password doesn't match!</p>";
         }
 
         else if($_GET["error"] == "usernametaken") {
-            echo "<p>User already exists :) Try Logging in.</p>";
+            echo "<p class='error'>User already exists :) Try Logging in.</p>";
         }
 
         else if($_GET["error"] == "stmtfailed") {
-            echo "<p>Something went wrong. Try again!</p>";
+            echo "<p class='error'>Something went wrong. Try again!</p>";
         }
 
         else if($_GET["error"] == "none") {
-                    echo "<p>You have successfully signed up!</p>";
+                    echo "<p class='error'>You have successfully signed up!</p>";
                 }
             }
         ?>
 
-    <?php 
-        include_once 'footer.php'; 
-    ?>
+        <!-- form input -->
+
+            <input class="signupInput" type="text" name="name" placeholder = "Full Name:"></br>
+            <input class="signupInput"type="text" name="email" placeholder = "Email:"></br>
+            <input class="signupInput"type="text" name="username" placeholder = "Username:"></br>
+            <input class="signupInput"type="password" name="password" placeholder = "Password:"></br>
+            <input class="signupInput"type="password" name="passwordRepeat" placeholder = "Repeat Password:"></br>
+            <button type="submit" name="submit">Register</button>
+            
+        </form>
+    </div>
+
+</div>
+<?php 
+    include_once 'footer.php'; 
+?>
 
 </body>
 </html>
