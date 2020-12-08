@@ -1,0 +1,43 @@
+/* C O L O R S
+    rgb(25, 21, 15);        Darkgray
+    rgb(98, 76, 45);        Mustard
+    rgb(170, 125, 57);      Darkyellow
+    rgb(242, 166, 57);      Brightyellow
+    rgb(255, 162, 22);      Yellow
+*/
+
+.bg {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(25, 21, 15);
+}
+
+.heading {
+    color: rgb(242, 166, 57);
+    font-size: 45px;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+iframe {
+    height: 15rem;
+    width: 25rem;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.para {
+    color: rgb(242, 166, 57);
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: center;
+    text-transform: capitalize;
+}
