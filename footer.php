@@ -19,7 +19,7 @@
                 <div id="footer-right">
                     <div class="footer-links">
                         <a href="#">Home</a><br>
-                        <a href="#">Contact</a><br>
+                        <a href="contact.php">Contact</a><br>
                         <a href="#">Web Design</a>
                     </div>
                     <div class="footer-links">
