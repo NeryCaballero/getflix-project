@@ -2,26 +2,30 @@
     include_once "headerprototype.php";
     
     if (isset($_SESSION["useruid"])){
-
         echo "<p> Hello " .$_SESSION["useruid"] . "</p>";
-
     }
-
 ?>
-    
-    <div class="menu">
-        <div class="submenu">
-            <img src="images/wl.jpg" height="280" width="280">
-            <h1>Weight Lifting</h1>
-        </div>
-        <div class="submenu2">
-            <img src="images/yoga.jpeg" height="280" width="280">
-            <h1>Yoga</h1>
-        </div>
-        <div class="submenu3">
-            <img src="images/pilate.jpg" height="280" width="280">
-            <h1>Pilate</h1>
-        </div>
+    <div id="welcome" class="section">     
+        <p>S</p>        
+    </div>
+
+    <div id="spaceforthevideo" class="section">
+    <p>our awesome video<br>goes here</p>
+    </div>
+
+    <div id="categories">  
+            <div class="categ">
+                <img src="images/yoga.svg">
+                <h1>Yoga</h1>
+            </div>
+            <div class="categ">
+                <img src="images/yoga.svg">
+                <h1>Fitness</h1>
+            </div>
+            <div class="categ">
+                <img src="images/yoga.svg">
+                <h1>BodyBuilding</h1>
+            </div>
     </div>
 
 <?php
