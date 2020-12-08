@@ -10,7 +10,9 @@
     </div>
 
     <div id="spaceforthevideo" class="section">
-    <p>our awesome video<br>goes here</p>
+        <video id="homepagevideo" class="video" muted>
+            <source src="" type="video/mp4">
+        </video>
     </div>
 
     <div id="categories">  
@@ -27,6 +29,7 @@
                 <h1>BodyBuilding</h1>
             </div>
     </div>
+    <script src="script.js"> <script>
 
 <?php
     include_once "footer.php";

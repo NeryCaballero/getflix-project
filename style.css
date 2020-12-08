@@ -29,13 +29,8 @@
 
 #spaceforthevideo {
     display: flex;
-    align-items: center; 
-}
-
-#spaceforthevideo p {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    align-items: center;
+    height: 720px;
 }
 
 #categories {
@@ -59,6 +54,10 @@ div.categ {
     max-width: 80vw;
     text-align: center;
 }
+#homepagevideo {
+    min-width: 100%;
+    min-height: 100%;
+  }
 
 @media screen and (min-width: 768px) {
     #categories {
