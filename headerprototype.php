@@ -56,7 +56,7 @@
             }
           ?>
 
-          <div class="menu-item"><a href="contactprototype.php"><i class="far fa-paper-plane"></i><br><br>CONTACT</a></div>
+          <div class="menu-item"><a href="contact.php"><i class="far fa-paper-plane"></i><br><br>CONTACT</a></div>
         
         </div>
       </nav>

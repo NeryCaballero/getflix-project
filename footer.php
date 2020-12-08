@@ -18,9 +18,11 @@
 
                 <div id="footer-right">
                     <div class="footer-links">
+
                         <a href="#">Back to top</a><br>
-                        <a href="#">Contact</a><br>
+                        <a href="contact.php">Contact</a><br>
                         <a href="https://github.com/NeryCaballero/getflix-project">Web Design</a>
+                      
                     </div>
                     <div class="footer-links">
                         <a href="gallery/yoga.php">Yoga</a><br>
