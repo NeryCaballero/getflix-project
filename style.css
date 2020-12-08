@@ -1,142 +1,74 @@
-body {
-    background: url(images/bg.jpg), no-repeat;
-    background-size: cover;
+/* ::::::::::::::::::::::::: C O N T E N T  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/** C O L O R S
+    rgb(25, 21, 15);        Darkgray
+    rgb(98, 76, 45);        Mustard
+    rgb(170, 125, 57);      Darkyellow
+    rgb(242, 166, 57);      Brightyellow
+    rgb(255, 162, 22);      Yellow
+**/
+
+.section {
+    min-height: 100vh;
+    max-height: 100vh;
 }
 
-.letter {
+#welcome {
+    background-color: rgb(170, 125, 57);
+    display: flex;
+    align-items: center;
+}
+
+#welcome p {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40vh;
+    color: #fff;
+    font-weight: 700;
+}
+
+#spaceforthevideo {
+    display: flex;
+    align-items: center; 
+}
+
+#spaceforthevideo p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#categories {
+    align-items: center; 
+    background-color: rgb(25, 21, 15);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    padding: 5vh 0;
+}
+
+div.categ {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categ img,
+.categ h1 {
+    /* border: 1px solid white; */
+    max-width: 80vw;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    #categories {
+        min-height: 100vh;
+        padding: 5vh 0;
+    }
+
+    .categ img,
+    .categ h1 {
     border: 1px solid black;
-    width: 300px;
-    box-shadow: 5px 4px 8px 9px;
-    background-color: black;
-    border-radius: 2px;
-}
-
-.letter h2 {
-    color: white;
-    font-family: candara;
-    text-align: center;
-}
-
-
-/* ---------------Submenu 1------------ */
-
-.submenu {
-    border: 1px solid transparent;
-    width: 280px;
-    background-color: black;
-    position: absolute;
-    left: 10%;
-    top: 30%;
-    font-family: candara;
-    box-shadow: 9px 10px 11px 8px;
-    border-radius: 23px;
-}
-
-.submenu h1 {
-    font-size: 20px;
-    font-family: candara;
-    font-weight: normal;
-    color: white;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-.submenu:hover {
-    color: silver;
-    box-shadow: 1px 2px 2px 11px;
-}
-
-img {
-    border-radius: 23px;
-}
-
-
-/* ---------------Submenu 2------------ */
-
-.submenu2 {
-    border: 1px solid transparent;
-    width: 280px;
-    background-color: black;
-    position: absolute;
-    left: 40%;
-    top: 30%;
-    font-family: candara;
-    box-shadow: 9px 10px 11px 8px;
-    border-radius: 23px;
-}
-
-.submenu2:hover {
-    color: silver;
-    box-shadow: 1px 2px 2px 11px;
-}
-
-.submenu2 h1 {
-    font-size: 20px;
-    font-family: candara;
-    font-weight: normal;
-    color: white;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-
-/* ---------------Submenu 3------------ */
-
-.submenu3 {
-    border: 1px solid transparent;
-    width: 280px;
-    background-color: black;
-    position: absolute;
-    left: 70%;
-    top: 30%;
-    font-family: candara;
-    box-shadow: 9px 10px 11px 8px;
-    border-radius: 23px;
-}
-
-.submenu3:hover {
-    color: silver;
-    box-shadow: 1px 2px 2px 11px;
-}
-
-.submenu3 h1 {
-    font-size: 20px;
-    font-family: candara;
-    font-weight: normal;
-    color: white;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-
-/*temporary nav bar*/
-
-body {
-    background-color: rgb(39, 37, 37);
-    box-sizing: border-box;
-}
-
-
-/* N A V  B A R  */
-
-.nav-bar {
-    background-color: rgba(36, 36, 36, 0.95);
-    padding-left: 300px;
-    padding-right: 300px;
-}
-
-.btn {
-    padding: 15px 10px;
-    color: rgba(227, 179, 57, 0.3);
-    font-size: 0.8em;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-align: center;
-    transition: background-color 0.2s ease-out, color 0.2s ease-out;
-}
-
-.btn:hover {
-    font-size: 1em;
-    background-color: rgba(227, 179, 57, 0.1);
-    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+    max-width: 30vw;
+    text-align: center;}
 }

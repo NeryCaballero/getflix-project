@@ -1,163 +1,162 @@
-/*body {
+/** C O L O R S
+    rgb(25, 21, 15);        Darkgray
+    rgb(98, 76, 45);        Mustard
+    rgb(170, 125, 57);      Darkyellow
+    rgb(242, 166, 57);      Brightyellow
+    rgb(255, 162, 22);      Yellow
+**/
+
+body {
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
     font-size: 14px;
-}*/
-
-#content {
-    background: url(images/yoga.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 1800px;
 }
 
-/* N A V  B A R  */
+/* ::::::::::::::::::::::::: N A V  B A R  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-#visible-bar-container {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 80px;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;            /*vertical align*/
-    width: 100%;
-}
+    #visible-bar-container {
+        background-color: rgba(25, 21, 15, 0.5);
+        height: 80px;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;            /*vertical align*/
+        width: 100%;
+    }
 
-#toggle {
-    width: inherit;
-    display: flex;
-    align-items: center;
-}
-
-#toggleBtnOpen {
-    background-color: transparent;
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 150%;
-    position: absolute;
-    left: 20px;
-  }
-
-#brand {
-    color: white;
-    font-size: 150%;
-    font-weight: 700;
-    letter-spacing: 10px;
-    text-align: center;
-    width: 100%;
-}
-
-#hidden-menu {
-    background-color: #252322;
-    color: white;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    z-index: 100;
-    visibility: hidden;
-} 
-
-#menu-soc-media {
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#toggleBtnClose {
-    background-color: transparent;
-    border: none;
-    color: rgba(194, 194, 194, 0.5);
-    text-align: center;
-    font-size: 150%;
-    position: absolute;
-    left: 20px; 
-}
-
-#toggleBtnClose:hover {
-    font-size: 300%;
-    color: rgb(228, 140, 40);
-}
-
-#soc-media {
-    color: rgba(194, 194, 194, 1);
-    position: absolute;
-    right: 0; 
-    display: flex;
-    min-width: 50%;
-    justify-content: space-evenly;
-}
-
-#soc-media a {
-    text-decoration: none;
-    color: rgba(194, 194, 194, 0.1);
-    font-size: 150%;
-    font-weight: 100;
-    flex-basis: 30%;
-    text-align: center;
-}
-
-#menu-options {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.menu-item {
-    border: 1px solid rgba(194, 194, 194, 0.05);
-    border-collapse: collapse;
-    box-sizing: border-box;
-    flex: 1;
-    text-align: center;
-    padding: 50px 0;
-    min-width: 50%;
-}
-
-@media screen and (min-width: 768px) {
-    
+    #toggle {
+        width: inherit;
+        display: flex;
+        align-items: center;
+    }
 
     #toggleBtnOpen {
-        left: 40px;
-        font-size: 200%;
+        background-color: transparent;
+        border: none;
+        color: white;
+        text-align: center;
+        font-size: 150%;
+        position: absolute;
+        left: 20px;
     }
-    #brand{font-size: 200%;}
+
+    #brand {
+        color: #fff;
+        font-size: 150%;
+        font-weight: 700;
+        letter-spacing: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #hidden-menu {
+        background-color: #252322;
+        color: white;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        z-index: 100;
+        visibility: hidden;
+    } 
+
+    #menu-soc-media {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
     #toggleBtnClose {
-        left: 40px;
-        font-size: 200%;
+        background-color: transparent;
+        border: none;
+        color: rgba(194, 194, 194, 0.5);
+        text-align: center;
+        font-size: 150%;
+        position: absolute;
+        left: 20px; 
     }
+
+    #toggleBtnClose:hover {
+        font-size: 300%;
+        color: rgb(228, 140, 40);
+    }
+
     #soc-media {
-        min-width: 25%;
+        color: rgba(194, 194, 194, 1);
+        position: absolute;
+        right: 0; 
+        display: flex;
+        min-width: 50%;
+        justify-content: space-evenly;
     }
-    .menu-item {min-width: 25%;}
+
+    #soc-media a {
+        text-decoration: none;
+        color: rgba(194, 194, 194, 0.1);
+        font-size: 150%;
+        font-weight: 100;
+        flex-basis: 30%;
+        text-align: center;
+    }
+
+    #menu-options {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-item {
+        border: 1px solid rgba(194, 194, 194, 0.05);
+        border-collapse: collapse;
+        box-sizing: border-box;
+        flex: 1;
+        text-align: center;
+        padding: 50px 0;
+        min-width: 50%;
+    }
+
+    @media screen and (min-width: 768px) {
+
+        #toggleBtnOpen {
+            left: 40px;
+            font-size: 200%;
+        }
+        #brand{font-size: 200%;}
+        #toggleBtnClose {
+            left: 40px;
+            font-size: 200%;
+        }
+        #soc-media {
+            min-width: 25%;
+        }
+        .menu-item {min-width: 25%;}
+    }
+
+    .menu-item a {
+        text-decoration: none;
+        color: rgba(194, 194, 194, 0.1);
+        font-size: 130%;
+        font-weight: 100;
+    }
+
+    .menu-item a:hover {
+        
+        color: rgb(228, 140, 40);
+        font-size: 150%;
+    }
+
+
+/* M E D I A Q U E R I E S  
+
+    /* @media screen and (min-width: 768px) {body {font-size: 20px;}}
+    @media screen and (min-width: 1024px) {body {font-size: 20px;}}
+    @media screen and (min-width: 1280px) {body {font-size: 20px;}} 
     
-    
-}
+*/
 
-.menu-item a {
-    text-decoration: none;
-    color: rgba(194, 194, 194, 0.1);
-    font-size: 130%;
-    font-weight: 100;
-}
-
-.menu-item a:hover {
-    
-    color: rgb(228, 140, 40);
-    font-size: 150%;
-}
-
-
-/* ================================================== */
-
-/* @media screen and (min-width: 768px) {body {font-size: 20px;}}
-@media screen and (min-width: 1024px) {body {font-size: 20px;}}
-@media screen and (min-width: 1280px) {body {font-size: 20px;}} */
-
-/*  G R I D  */
+/*  G R I D  
 
 .row {
     margin-right: -20px;
@@ -238,7 +237,7 @@
 
 }
 
-/* C L E A R  F I X */
+/* C L E A R  F I X 
 
 .row:before,
 .row:after,
@@ -255,3 +254,5 @@
     .group {
     zoom: 1;
 }
+
+*/
