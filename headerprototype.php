@@ -11,6 +11,7 @@
     <!-- Style Sheets -->
     <link rel="stylesheet" href="headerstyle.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forms.css">    
     <link rel="stylesheet" href="footerstyle.css">
     <link rel="stylesheet" href="normalize.css">
     <!-- Fonts -->
