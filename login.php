@@ -33,7 +33,7 @@ if (isset($_GET["error"])) {
 
             <input class="signupInput" type="text" name="username" placeholder = "Username / Email:">
             <input class="signupInput" type="password" name="password" placeholder = "Password:">
-            <button type="submit" name="submit"> Log in </button>
+            <button class="formbutton" type="submit" name="submit"> Log in </button>
             <span id="forgotten"><a href  ="#"> Forgotten Password </a></span>
     
         </form>

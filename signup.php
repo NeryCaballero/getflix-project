@@ -47,8 +47,8 @@
             <input class="signupInput"type="text" name="username" placeholder = "Username:"></br>
             <input class="signupInput"type="password" name="password" placeholder = "Password:"></br>
             <input class="signupInput"type="password" name="passwordRepeat" placeholder = "Repeat Password:"></br>
-            <button type="submit" name="submit">Register</button>
-            
+            <button class="formbutton" type="submit" name="submit">Register</button>
+
         </form>
     </div>
 
