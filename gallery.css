@@ -8,18 +8,9 @@
 
 .bg {
     margin: 0;
-    padding: 0;
+    padding-top: 85px;
     box-sizing: border-box;
     background-color: rgb(25, 21, 15);
-}
-
-.heading {
-    color: rgb(242, 166, 57);
-    font-size: 45px;
-    font-family: sans-serif;
-    font-weight: normal;
-    text-align: center;
-    text-transform: capitalize;
 }
 
 html {
