@@ -25,9 +25,9 @@
                       
                     </div>
                     <div class="footer-links">
-                        <a href="gallery/yoga.php">Yoga</a><br>
-                        <a href="gallery/fitness.php">Fitness</a><br>
-                        <a href="gallery/bodybuilding.php">Body Building</a><br>
+                        <a href="yoga.php">Yoga</a><br>
+                        <a href="fitness.php">Fitness</a><br>
+                        <a href="bodybuilding.php">Body Building</a><br>
                     </div>
                 </div>
             </div>
