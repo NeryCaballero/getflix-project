@@ -1,6 +1,7 @@
 <?php 
     include_once "headerprototype.php";
 ?>
+
     <button id="scrollbutton"> Back to top </button>
 
 
@@ -17,18 +18,17 @@
     <div id="categories">  
             <div class="categ">
                 <img src="images/yoga.svg">
-                <a href="gallery/yoga.php"><h1>Yoga</h1></a>
+                <a href="yoga.php"><h1>Yoga</h1></a>
             </div>
             <div class="categ">
                 <img src="images/yoga.svg">
-                <a href="gallery/fitness.php"><h1>Fitness</h1></a>
+                <a href="fitness.php"><h1>Fitness</h1></a>
             </div>
             <div class="categ">
                 <img src="images/yoga.svg">
-                <a href="gallery/bodybuilding.php"><h1>Body Building</h1></a>
+                <a href="bodybuilding.php"><h1>Body Building</h1></a>
             </div>
     </div>
-    <script src="script.js"> <script>
 
 <?php
     include_once "footer.php";
