@@ -4,9 +4,9 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$serverName ="database";
-$dbUsername ="root";
-$dbPassword ="root";
+$serverName ="localhost:3306";
+$dbUsername ="debian-sys-maint";
+$dbPassword ="1bCc3jsz7FwLmkia";
 $dbName="sweatish_db"; // Variable should match the name of our database in phpMyAdmin
 
 $conn = mysqli_connect($serverName, $dbUsername, $dbPassword, $dbName);     // Built-in function allowing connexion between MySQL and the client system.
