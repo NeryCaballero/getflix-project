@@ -5,7 +5,7 @@
         echo "<p> Hello " .$_SESSION["useruid"] . "</p>";
     }
 ?>
-    <button id="scrollbutton"> Back to top </button>
+    <button id="scrollbutton"> <i class="fas fa-angle-double-up"></i> </button>
     <div id="welcome" class="section">     
         <p>S</p>        
     </div>
@@ -30,7 +30,6 @@
                 <h1>BodyBuilding</h1>
             </div>
     </div>
-    <script src="script.js"> <script>
 
 <?php
     include_once "footer.php";
