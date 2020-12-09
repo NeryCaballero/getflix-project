@@ -5,6 +5,7 @@
         echo "<p> Hello " .$_SESSION["useruid"] . "</p>";
     }
 ?>
+    <button id="scrollbutton"> Back to top </button>
     <div id="welcome" class="section">     
         <p>S</p>        
     </div>

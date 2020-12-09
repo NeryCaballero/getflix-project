@@ -30,3 +30,23 @@ window.onload = function(){
     playVideo();
     videoElement.addEventListener("ended", function(){ playVideo(); });
 }
+
+//Scroll back to top button 
+
+let scrollButton = document.getElementById("scrollbutton");
+
+window.onscroll = function() {scrollFunction()};
+
+let scrollFunction = () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+let topFunction = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+scrollButton.addEventListener("click", topFunction)
