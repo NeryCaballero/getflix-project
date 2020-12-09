@@ -1,13 +1,17 @@
 <?php 
     include_once "headerprototype.php";
 ?>
+    <button id="scrollbutton"> Back to top </button>
+
 
     <div id="welcome" class="section">     
         <p>S</p>        
     </div>
 
     <div id="spaceforthevideo" class="section">
-    <p>our awesome video<br>goes here</p>
+        <video id="homepagevideo" class="video" muted>
+            <source src="" type="video/mp4">
+        </video>
     </div>
 
     <div id="categories">  
@@ -24,6 +28,7 @@
                 <a href="gallery/bodybuilding.php"><h1>Body Building</h1></a>
             </div>
     </div>
+    <script src="script.js"> <script>
 
 <?php
     include_once "footer.php";
