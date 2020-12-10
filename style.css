@@ -36,7 +36,6 @@
 #categories {
     align-items: center; 
     background-color: rgb(25, 21, 15);
-    color: white;
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
@@ -46,18 +45,40 @@
 div.categ {
     margin-left: auto;
     margin-right: auto;
+    min-width: 80vw;
+    flex: 1;
 }
 
-.categ img,
-.categ h1 {
-    /* border: 1px solid white; */
-    max-width: 80vw;
+.categ a img {    
+    height: 10vh;
     text-align: center;
 }
+
+.categ a h1 {
+    color: white;
+}
+
+
+@media screen and (min-width: 768px) {
+    #categories {
+        min-height: 100vh;
+        padding: 5vh 0;
+    }
+
+    div.categ {
+        max-width: 30vw;
+    }
+
+    .categ a img {    
+        height: 40vh;
+    }
+}
+
 #homepagevideo {
     min-width: 100%;
     min-height: 100%;
-  }
+}
+
 #scrollbutton {
     display: none;
     position: fixed;
@@ -73,20 +94,8 @@ div.categ {
     color: white;
     cursor: pointer;
     font-size: 25px;
-  }  
+}
+
 #scrollbutton:hover {
     background-color: rgb(98, 76, 45);
-  }
-
-@media screen and (min-width: 768px) {
-    #categories {
-        min-height: 100vh;
-        padding: 5vh 0;
-    }
-
-    .categ img,
-    .categ h1 {
-    border: 1px solid black;
-    max-width: 30vw;
-    text-align: center;}
 }
