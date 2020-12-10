@@ -17,7 +17,7 @@
     <div id="categories">  
             <div class="categ">
                 <img src="images/yoga.svg">
-                <a href="yoga.php"><h1>Yoga</h1></a>
+                <a href="yogaprototype.php"><h1>Yoga</h1></a>
             </div>
             <div class="categ">
                 <img src="images/yoga.svg">
