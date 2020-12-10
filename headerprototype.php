@@ -33,7 +33,7 @@
       <div id="visible-bar-container">
         <div id="toggle">
           <button id="toggleBtnOpen"><i class="fas fa-bars"></i></button>
-          <div id="brand"><p>SWEATISH</p></div>
+          <div id="brand"><p><a href="index.php">SWEATISH</a></p></div>
         </div>
       </div> 
       <nav id="hidden-menu">
