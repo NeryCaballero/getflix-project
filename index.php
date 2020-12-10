@@ -21,11 +21,11 @@
             </div>
             <div class="categ">
                 <img src="images/yoga.svg">
-                <a href="fitness.php"><h1>Fitness</h1></a>
+                <a href="fitnessprototype.php"><h1>Fitness</h1></a>
             </div>
             <div class="categ">
                 <img src="images/yoga.svg">
-                <a href="bodybuilding.php"><h1>Body Building</h1></a>
+                <a href="bodybuildingprototype.php"><h1>Body Building</h1></a>
             </div>
     </div>
 
