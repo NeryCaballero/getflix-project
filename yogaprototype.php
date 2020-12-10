@@ -21,12 +21,10 @@
     <button type="submit" name="submit-search">Search</button>
 </form>
 
-<h1>MAIN SPORT Page</h1> WE GANNA HAVE 3
-<h2>All Videos</h2>
 
 <div class="video-container">
     <?php 
-        $sql = "SELECT * FROM gallery;";                        // WHERE category is YOGA, FITNESS< B-BUILDING
+        $sql = "SELECT * FROM gallery WHERE video_category = 'yoga';";                        // WHERE category is YOGA, FITNESS< B-BUILDING
         $result = mysqli_query($conn, $sql);
         $queryResults = mysqli_num_rows($result);
 

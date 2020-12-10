@@ -32,3 +32,12 @@ iframe {
     text-align: center;
     text-transform: capitalize;
 }
+
+
+.video-container{
+    width: 100vw;
+    height: 60vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

@@ -1,11 +1,30 @@
 <?php 
     include_once "includes/dbh.inc.php";
     include_once "headerprototype.php";
+    
 
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
 ?>
+
+<form action="search.php" method="POST">
+    <input type="text" name="search" placeholder="Search . . .">
+    <select name="subcategories">                             
+        <option value="Hatha">Hatha</option>     
+        <option value="Vinyasa">Vinyasa</option>
+        <option value="Ashtanga">Ashtanga</option>
+        <option value="Upperbody">UpperBody</option>     
+        <option value="Core">Core</option>
+        <option value="Lowerbody">LowerBody</option>
+        <option value="Arms">Arms</option>     
+        <option value="Chest">Chest</option>
+        <option value="Legs">Legs</option>
+    </select>
+    <button type="submit" name="submit-search">Search</button>
+</form>
+
+
 
 <div class=" video-container">
 
@@ -14,7 +33,7 @@
     if(isset($_POST['submit-search'])){
 
         $filter= $_POST['subcategories'];
-        echo $filter;
+
         $search = mysqli_real_escape_string($conn,$_POST['search']);
 
         if (empty($search)){
