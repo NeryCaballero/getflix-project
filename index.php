@@ -16,16 +16,22 @@
 
     <div id="categories">  
             <div class="categ">
-                <img src="images/yoga.svg">
-                <a href="yogaprototype.php"><h1>Yoga</h1></a>
+                <a href="yogaprototype.php">
+                    <img src="images/yoga.png">
+                    <h1>Yoga</h1>
+                </a>
             </div>
             <div class="categ">
-                <img src="images/yoga.svg">
-                <a href="fitness.php"><h1>Fitness</h1></a>
+                <a href="fitness.php">
+                    <img src="images/fitness.png">
+                    <h1>Fitness</h1>
+                </a>
             </div>
             <div class="categ">
-                <img src="images/yoga.svg">
-                <a href="bodybuilding.php"><h1>Body Building</h1></a>
+                <a href="bodybuilding.php">
+                    <img src="images/body.png">
+                    <h1>Body Building</h1>
+                </a>
             </div>
     </div>
 
