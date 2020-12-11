@@ -22,13 +22,13 @@
                 </a>
             </div>
             <div class="categ">
-                <a href="fitness.php">
+                <a href="fitnessprototype.php">
                     <img src="images/fitness2.png"><br>
                     <h1>Fitness</h1>
                 </a>
             </div>
             <div class="categ">
-                <a href="bodybuilding.php">
+                <a href="bodybuildingprototype.php">
                     <img src="images/fitness.png"><br>
                     <h1>Body Building</h1>
                 </a>
