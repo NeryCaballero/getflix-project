@@ -29,7 +29,7 @@
             </div>
             <div class="categ">
                 <a href="bodybuilding.php">
-                <img src="images/fitness.png"><br>
+                    <img src="images/fitness.png"><br>
                     <h1>Body Building</h1>
                 </a>
             </div>
