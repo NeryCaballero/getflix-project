@@ -17,19 +17,19 @@
     <div id="categories">  
             <div class="categ">
                 <a href="yogaprototype.php">
-                    <img src="images/yoga.png">
+                    <img src="images/yoga3.png"><br>
                     <h1>Yoga</h1>
                 </a>
             </div>
             <div class="categ">
                 <a href="fitness.php">
-                    <img src="images/fitness.png">
+                    <img src="images/fitness2.png"><br>
                     <h1>Fitness</h1>
                 </a>
             </div>
             <div class="categ">
                 <a href="bodybuilding.php">
-                    <img src="images/body.png">
+                <img src="images/fitness.png"><br>
                     <h1>Body Building</h1>
                 </a>
             </div>
