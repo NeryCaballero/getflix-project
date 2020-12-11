@@ -1,5 +1,3 @@
-/* ::::::::::::::::::::::::: C O N T E N T  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 /** C O L O R S
     rgb(25, 21, 15);        Darkgray
     rgb(98, 76, 45);        Mustard
@@ -7,6 +5,8 @@
     rgb(242, 166, 57);      Brightyellow
     rgb(255, 162, 22);      Yellow
 **/
+
+/* ::::::::::::::::::::::::: W E L C O M E   B A N N E R   ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 .section {
     min-height: 100vh;
@@ -27,37 +27,19 @@
     font-weight: 700;
 }
 
+/* ::::::::::::::::::::::::: V I D E O  S E C T I O N  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
 #spaceforthevideo {
     display: flex;
     align-items: center;
     height: 720px;
 }
 
-#categories {
-    align-items: center; 
-    background-color: rgb(25, 21, 15);
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    padding: 5vh 0;
-}
-
-div.categ {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.categ img,
-.categ h1 {
-    /* border: 1px solid white; */
-    max-width: 80vw;
-    text-align: center;
-}
 #homepagevideo {
     min-width: 100%;
     min-height: 100%;
-  }
+}
+
 #scrollbutton {
     display: none;
     position: fixed;
@@ -73,20 +55,61 @@ div.categ {
     color: white;
     cursor: pointer;
     font-size: 25px;
-  }  
+}
+
 #scrollbutton:hover {
     background-color: rgb(98, 76, 45);
-  }
+}
+
+/* ::::::::::::::::::::::::: S P O R T S   S E C T I O N  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#categories {
+    background-color: rgb(25, 21, 15);
+    min-height: 100vh;
+    padding: 20vh 0 5vh 0;
+}
+
+div.categ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5vh;
+}
+
+.categ a img {    
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+}
+
+.categ a h1 {
+    flex: 1;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.4vh;
+    font-size: 2.8vh;
+}
+
+
+.categ a h1:hover{
+    color: rgb(242, 166, 57); 
+}
+
 
 @media screen and (min-width: 768px) {
     #categories {
         min-height: 100vh;
-        padding: 5vh 0;
+        padding: 20vh 0 10vh 0;
     }
 
-    .categ img,
-    .categ h1 {
-    border: 1px solid black;
-    max-width: 30vw;
-    text-align: center;}
+    div.categ {
+        max-width: 30vw;
+    }
+
+    .categ a img {    
+        height: 40vh;
+    }
 }

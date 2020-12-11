@@ -43,17 +43,14 @@ body {
     }
 
     #brand {
-        color: #fff;
-        font-size: 150%;
-        font-weight: 700;
-        letter-spacing: 10px;
-        text-align: center;
+        text-align: center; 
         width: 100%;
     }
 
     #brand a {
         color: #fff;
-        text-decoration: none;
+        font-weight: 700;
+        letter-spacing: 10px;
 
     }
 
@@ -106,6 +103,12 @@ body {
         font-weight: 100;
         flex-basis: 30%;
         text-align: center;
+    }
+
+    
+    #soc-media a i:hover {
+        color: rgb(228, 140, 40);
+        font-size: 150%;
     }
 
     #menu-options {
