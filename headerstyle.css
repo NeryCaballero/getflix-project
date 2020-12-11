@@ -105,6 +105,12 @@ body {
         text-align: center;
     }
 
+    
+    #soc-media a i:hover {
+        color: rgb(228, 140, 40);
+        font-size: 150%;
+    }
+
     #menu-options {
         display: flex;
         flex-wrap: wrap;
